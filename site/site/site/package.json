@@ -1,0 +1,11 @@
+{
+  "name": "integrative-pt-site",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  }
+}

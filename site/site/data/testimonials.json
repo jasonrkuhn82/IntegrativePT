@@ -1,0 +1,8 @@
+{
+  "reviews": [
+    { "quote": "Add a quote from one of your Google or Facebook reviews here.", "author": "Client name or initials", "rating": 5 },
+    { "quote": "Add a quote from one of your Google or Facebook reviews here.", "author": "Client name or initials", "rating": 5 },
+    { "quote": "Add a quote from one of your Google or Facebook reviews here.", "author": "Client name or initials", "rating": 5 }
+  ],
+  "google_reviews_url": "https://www.google.com/search?q=Integrative+Rehabilitation+%26+Wellness+Belmont+NC+reviews"
+}

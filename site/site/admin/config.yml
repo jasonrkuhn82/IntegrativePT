@@ -1,0 +1,80 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# After connecting this site to Netlify + enabling Identity & Git Gateway,
+# this panel lives at yoursite.com/admin and logs in with Netlify Identity.
+#
+# Blog posts and events are stored as individual files (one per post/event) so
+# adding new ones is a simple "New" button. A build step automatically compiles
+# them into the JSON the live site reads — no need to touch that manually.
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string", hint: "No spaces — becomes the post's web address, e.g. my-post-title" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { label: "Author", name: "author", widget: "string", default: "Natalie McAveney, PT, DPT" }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Short Excerpt (shows on the blog list)", name: "excerpt", widget: "text" }
+      - { label: "Full Post", name: "body", widget: "markdown" }
+
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{date}}"
+    fields:
+      - { label: "Event Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { label: "Time", name: "time", widget: "string", required: false, hint: "e.g. 9:00 AM" }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Booking / Info Link", name: "link", widget: "string", required: false }
+
+  - name: "settings"
+    label: "Site Content"
+    files:
+      - name: "services"
+        label: "Services Page"
+        file: "data/services.json"
+        fields:
+          - { label: "Intro Text", name: "intro", widget: "text" }
+          - { label: "Physical Therapy — Section Title", name: "pt_heading", widget: "string" }
+          - { label: "Physical Therapy — Tagline", name: "pt_tag", widget: "string" }
+          - label: "Physical Therapy — Services List"
+            name: "pt_services"
+            widget: "list"
+            field: { label: "Service", name: "item", widget: "string" }
+          - { label: "Wellness — Section Title", name: "wellness_heading", widget: "string" }
+          - { label: "Wellness — Tagline", name: "wellness_tag", widget: "string" }
+          - label: "Wellness — Services List"
+            name: "wellness_services"
+            widget: "list"
+            field: { label: "Service", name: "item", widget: "string" }
+          - { label: "Footnote", name: "footnote", widget: "text" }
+
+      - name: "testimonials"
+        label: "Reviews / Testimonials"
+        file: "data/testimonials.json"
+        fields:
+          - label: "Featured Reviews"
+            name: "reviews"
+            widget: "list"
+            summary: "{{author}}"
+            fields:
+              - { label: "Review Quote", name: "quote", widget: "text" }
+              - { label: "Client Name (first name or initials is fine)", name: "author", widget: "string" }
+              - { label: "Star Rating", name: "rating", widget: "select", options: [1, 2, 3, 4, 5], default: 5 }
+          - { label: "Link to All Reviews", name: "google_reviews_url", widget: "string", hint: "Paste your Google Business Profile link here once you have it" }
+
