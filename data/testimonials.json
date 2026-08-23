@@ -1,8 +1,30 @@
 {
   "reviews": [
-    { "quote": "Add a quote from one of your Google or Facebook reviews here.", "author": "Client name or initials", "rating": 5 },
-    { "quote": "Add a quote from one of your Google or Facebook reviews here.", "author": "Client name or initials", "rating": 5 },
-    { "quote": "Add a quote from one of your Google or Facebook reviews here.", "author": "Client name or initials", "rating": 5 }
+    {
+      "quote": "I honestly can’t say enough good things about Natalie. I’ve been seeing her for years, and she is the one provider I will always come back to, no matter what new issue pops up.\n\nShe has this rare ability to really listen & connect the dots in a way that makes you feel understood and confident in the plan. I’ve come in with everything from lingering injuries to more complex or hard-to-explain symptoms, and every time she’s been able to figure out what’s actually going on and treat it effectively. You can tell that she genuinely cares about her patients and their progress.\n\nWhat really sets her apart is her depth of knowledge, especially with hypermobility / EDS. She doesn’t just treat symptoms - she looks at the whole picture and gets to the root of the problem. Her use of techniques like dry needling has also made a huge difference for me when other treatments didn’t fully help.\n\nIf you’re looking for a physical therapist who is incredibly skilled, thorough, and genuinely invested in helping you feel better, I wouldn’t go anywhere else.",
+      "author": "Samantha",
+      "rating": 5
+    },
+    {
+      "quote": "I have been working with Natalie for a short while now and she has completely reversed my neck and shoulder pain I’ve been fighting with for years. Not only did she fix the pain I had she gave me some really helpful tips to continue to manage things between visits. This level of relief is game changing and I am able to do everyday activities and work pain free. Natalie is sweet, her office is VERY clean and relaxing, she’s a great listener, and I tell everyone I know to see her!! Everything about this business is amazing I wish I could give her more stars :)",
+      "author": "Tiara",
+      "rating": 5
+    },
+    {
+      "quote": "Natalie is like a detective when it comes to figuring out the mystery issues I seem to have with my body. I have followed her to 3 different locations over the course of many years. Whenever a new issue arises, I know that she will figure out why and get me back on the road to recovery.",
+      "author": "Patricia",
+      "rating": 5
+    },
+    {
+      "rating": 5,
+      "quote": "I highly recommend Natalie! I have seen a drastic improvement in my pain since I started working with her last year. She is very knowledgeable when it comes to hypermobility which has been wonderful for me and very educational. Dry needling has been very helpful for me as well.",
+      "author": "Morgan"
+    },
+    {
+      "rating": 5,
+      "quote": "Natalie has helped me so much, I saw her every week for 10 weeks now once a month she has gotten more mobile again and able to do the things I love",
+      "author": "Alana"
+    }
   ],
-  "google_reviews_url": "https://www.google.com/search?q=Integrative+Rehabilitation+%26+Wellness+Belmont+NC+reviews"
+  "google_reviews_url": "https://share.google/oRyAds2GOSdCMq28x"
 }
