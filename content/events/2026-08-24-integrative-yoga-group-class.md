@@ -1,8 +1,9 @@
 ---
-title: "Integrative Yoga — Group Class"
-date: 2026-08-24
-time: "9:00 AM"
-location: "706 S. Main St, Belmont, NC"
-description: "A slow, breath-led group class open to all levels. Mats provided; just bring water and comfortable clothes."
-link: "https://integrativept.janeapp.com/"
+title: Integrative Yoga — Group Class
+date: 2026-08-23
+time: 7:30 PM to 8:45 PM
+location: TechWorks Gaston, Ervin St, Belmont, NC
+description: "Yoga class for everyone!  Bring a mat, towel, water - blocks,
+  straps, lavender towels provided.  Can't wait to see you there. "
+link: https://integrativept.janeapp.com/
 ---
